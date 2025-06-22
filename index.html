@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vanishing Peace: A Case Study in Public Funds Without Accountability</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #E0F2F8;
+            color: #003F5C;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            color: #003F5C;
+        }
+        .text-accent {
+            color: #366E8A;
+        }
+        .bg-card {
+            background-color: white;
+            border-radius: 0.5rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+        .chart-container {
+            position: relative;
+            width: 100%;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            height: 300px;
+            max-height: 400px;
+        }
+        @media (min-width: 768px) {
+            .chart-container {
+                height: 350px;
+            }
+        }
+        .cite-ref {
+            font-size: 0.8em;
+            vertical-align: super;
+            color: #6B9DB3;
+            font-weight: bold;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #A5CADF;
+        }
+        th {
+            background-color: #003F5C;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #f8faff;
+        }
+        ul.bullet-list li {
+            position: relative;
+            padding-left: 1.5em;
+        }
+        ul.bullet-list li::before {
+            content: '•';
+            position: absolute;
+            left: 0;
+            color: #6B9DB3;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body class="text-[#003F5C]">
+
+    <div class="container mx-auto p-4 md:p-8 max-w-5xl">
+
+        <header class="text-center mb-12 md:mb-16">
+            <h1 class="text-4xl md:text-6xl font-black leading-tight mb-4">VANISHING PEACE</h1>
+            <p class="text-lg md:text-xl text-accent max-w-3xl mx-auto">A case study in how UK public funds for peacebuilding were allocated to a Swiss-based NGO with no legal registration, no financial reports, and no verifiable impact, all during a time of national austerity.</p>
+        </header>
+
+        <section class="mb-12 md:mb-16">
+            <h2 class="text-3xl font-bold mb-4">Executive Summary</h2>
+            <p class="mb-4">In the context of the global economic crisis (2007–2009) and the UK's subsequent period of austerity, significant public funds were allocated to the Conflict Prevention Pool (CPP) for peacebuilding efforts, including unofficial Track II diplomacy. Among the recipients was the Centre for Just Peace and Democracy (CJPD), a Geneva-based organization that claimed to facilitate peace dialogue related to the Sri Lankan conflict.</p>
+            <p class="mb-4">This report investigates CJPD's funding, legal status, and legitimacy as a recipient of UK government support. Drawing on parliamentary records, FOI requests, legal databases, and diaspora testimonies, this case study reveals that despite receiving confirmed UK public funds, CJPD exhibited a profound lack of transparency. It possessed no formal legal registration in Switzerland and failed to publish any financial statements or impact reports. This opacity starkly contrasts with global best practices for Track II diplomacy and non-profit financial accountability.</p>
+            <p class="mb-8">The CJPD case raises troubling questions about the oversight mechanisms for public peacebuilding funds, highlighting critical accountability gaps and the risks of misuse or politicization when basic standards of transparency are not enforced. Understanding these failures is crucial for ensuring the integrity and effectiveness of future peace diplomacy initiatives, particularly those involving public money and diaspora-led actors.</p>
+        </section>
+
+        <section class="mb-12 md:mb-16">
+            <h2 class="text-3xl font-bold mb-4">1. Introduction</h2>
+            <h3 class="text-2xl font-semibold mb-3">Context: Conflict Prevention and Track II Diplomacy</h3>
+            <p class="mb-4">In the wake of protracted civil conflicts globally, governments increasingly utilize Track II diplomacy—unofficial, informal dialogue efforts—to prevent violence and support peace processes. Funded through dedicated streams like the UK’s Conflict Prevention Pool (CPP), these efforts typically involve civil society actors, academics, and diaspora groups operating outside formal negotiations to build trust and generate ideas for resolution.</p>
+            <p class="mb-4">The Tamil diaspora has long engaged in such efforts concerning the Sri Lankan conflict, particularly during the ceasefire period (2002–2006) and its aftermath. Among the prominent initiatives of that time was the Centre for Just Peace and Democracy (CJPD)—a Geneva-based platform that presented itself as a Track II actor supporting peace between the Sri Lankan state and Tamil political movements.</p>
+
+            <h3 class="text-2xl font-semibold mb-3">Purpose and Scope of the Report</h3>
+            <p class="mb-4">This report investigates the funding, legal status, and legitimacy of CJPD as a recipient of UK government support through the Conflict Prevention Pool. Drawing on parliamentary records, Freedom of Information (FOI) requests, legal databases, and diaspora testimonies, it addresses the following key questions:</p>
+            <ul class="list-disc list-inside mb-4">
+                <li>Was CJPD a legitimate Track II organization?</li>
+                <li>How was it funded, and by whom?</li>
+                <li>Did it meet basic standards of transparency and accountability?</li>
+            </ul>
+            <p class="mb-8">The report also compares CJPD to globally accepted Track II case studies to assess whether it functioned as a credible peacebuilding actor or merely performed diplomacy without delivering substance. This case study is part of a broader concern about how public peacebuilding funds are used, tracked, and evaluated, particularly during times of economic hardship and political manipulation.</p>
+
+            <h3 class="text-2xl font-semibold mb-3">Why CJPD Matters</h3>
+            <p class="mb-4">Understanding CJPD is not merely a matter of historical curiosity; it is about accountability, credibility, and the future of peace diplomacy. CJPD received UK public funding at a time of great global economic stress (2007–2008) yet left behind little trace of its financial records, legal registration, or tangible impact. This raises troubling questions:</p>
+            <ul class="list-disc list-inside mb-4">
+                <li>How can public peace funds vanish without scrutiny?</li>
+                <li>What structures failed to ensure oversight?</li>
+                <li>And how can diaspora-led efforts be made more inclusive and trustworthy going forward?</li>
+            </ul>
+            <p class="mb-8">This report is a first step toward answering those questions—and ensuring that justice and transparency are not sacrificed in the name of peace.</p>
+        </section>
+
+        <section class="mb-12 md:mb-16">
+            <h2 class="text-3xl font-bold mb-4">2. Background: The Conflict Prevention Pool (CPP) and the 2008 Financial Crisis</h2>
+            <p class="mb-4">In the late 2000s, as the world entered the grip of the 2008 financial crisis, the UK government maintained—and in some areas expanded—its foreign aid portfolio. One flagship mechanism was the Conflict Prevention Pool (CPP): a coordinated interdepartmental funding programme led by the Foreign & Commonwealth Office (FCO), the Ministry of Defence (MoD), and the Department for International Development (DFID)<span class="cite-ref">[cite: The Global Conflict Prevention Pool: A Joint UK Government Approach to Reducing Conflict]</span>.</p>
+            <p class="mb-4">The CPP was intended to reduce global conflict risks through early intervention, peacebuilding, Track II diplomacy, and governance support in volatile regions. This commitment unfolded at a time of deep domestic strain: unemployment surged, GDP contracted, and public services were drastically cut as the UK entered its largest peacetime economic shock in living memory<span class="cite-ref">[cite: United Kingdom Government Austerity Programme – Wikipedia]</span>.</p>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center bg-white/70 rounded-lg shadow-md p-6 mb-8">
+                <div>
+                    <h3 class="text-2xl font-bold mb-2">A Contradiction in Spending</h3>
+                    <p class="text-accent mb-4">Despite economic turmoil, the CPP maintained high levels of funding. These figures underscore a policy priority—but also raise critical questions about oversight, due diligence, and transparency in how these public funds were disbursed during a period of intense public scrutiny over government spending.</p>
+                    <ul class="list-disc list-inside text-accent mb-4">
+                        <li>**2007–08:** The Africa and Global Conflict Prevention Pools (ACPP and GCPP) jointly administered approximately £138 million<span class="cite-ref">[cite: Independent Commission for Aid Impact (ICAI), Conflict Pool Inception Report]</span>.</li>
+                        <li>**2008–09:** The merged CPP allocated £112 million, including £62.5–68 million earmarked for Africa, with remaining funds for South Asia, global peace support, and fragile states.</li>
+                    </ul>
+                </div>
+                <div>
+                    <div class="chart-container mx-auto h-64 md:h-80">
+                        <canvas id="cppBudgetChart"></canvas>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-12 md:mb-16">
+            <h2 class="text-3xl font-bold mb-4">3. Enter CJPD: Origins and Objectives</h2>
+            <p class="mb-4">The Centre for Just Peace and Democracy (CJPD) was founded in 2004 as a Geneva-based diaspora initiative focused on promoting a just and negotiated resolution to the Sri Lankan civil conflict. The organization presented itself as a Track II peacebuilding hub dedicated to action research, political dialogue, and humanitarian discourse. While CJPD styled itself as an independent actor, its positioning within the Tamil diaspora raised important questions about its neutrality, access, and accountability.</p>
+
+            <div class="bg-white rounded-lg shadow-md p-6 text-left mb-8">
+                <h3 class="text-2xl font-bold mb-2">CJPD's Claimed Mission</h3>
+                <ul class="list-disc list-inside text-accent mb-4">
+                    <li>Creating a space for dialogue on self-determination versus sovereignty.</li>
+                    <li>Facilitating diaspora involvement in peacebuilding processes.</li>
+                    <li>Hosting workshops, seminars, and conferences with international partners.</li>
+                    <li>Providing a platform for intellectual contributions from the global Tamil diaspora.</li>
+                </ul>
+                <p class="font-semibold text-accent">Despite its claims, it operated as an elite intellectual forum with minimal grassroots participation or public accountability.</p>
+            </div>
+
+            <h3 class="text-2xl font-semibold mb-3">Key Individuals and Diaspora Links</h3>
+            <p class="mb-4">CJPD’s leadership primarily consisted of senior diaspora professionals with longstanding engagement in Tamil political and social activism overseas. Notable figures included:</p>
+            <ul class="list-disc list-inside mb-4">
+                <li>**Anton Ponrajah** (Switzerland): Director of Administration and Finance; experienced participant at UN Human Rights Council sessions in Geneva.</li>
+                <li>**A.C. Tarcisius** (UK): Academic lead and former BBC journalist, involved in diaspora media.</li>
+                <li>**Ana Pararajasingham** (Australia): Former World Bank consultant and diaspora intellectual.</li>
+                <li>**Suthaharan Nadarajah** (UK): Advisory board member and political theorist collaborating with international peace foundations.</li>
+            </ul>
+            <p class="mb-4">The organization maintained close ties to diaspora networks such as the British Tamil Association UK (distinct from the British Tamil Forum), highlighting its embeddedness within established diaspora political circles.</p>
+
+            <h3 class="text-2xl font-semibold mb-3">Activities and International Partnerships</h3>
+            <p class="mb-4">Between 2005 and 2009, CJPD organized numerous seminars and workshops across Europe and Australia on topics including humanitarian law, diaspora mobilization, and mine action. Its key collaborations included:</p>
+            <ul class="list-disc list-inside mb-4">
+                <li>**Geneva Call:** Focus on mine action and humanitarian engagement.</li>
+                <li>**Berghof Foundation for Conflict Studies:** Supporting Track II peace discourse.</li>
+                <li>**Transcend International:** Academic research and peace studies.</li>
+            </ul>
+            <p class="mb-8">CJPD also hosted the launch of the book *International Dimensions of the Conflict in Sri Lanka* in Sydney (2008) and signed a Memorandum of Understanding in 2007 with the Berghof Foundation for institutional support. While CJPD engaged in various public-facing activities, it showed limited grassroots participation, lacked transparent reporting of outcomes, and did not maintain a publicly accessible archive of its work. In practice, it operated largely as an elite diaspora intellectual forum, often regarded by state and NGO partners as a Track II interlocutor despite limited demonstrable impact or accountability.</p>
+        </section>
+
+        <section class="bg-white rounded-lg shadow-xl p-6 md:p-8 mb-12 md:mb-16">
+            <h2 class="text-3xl font-bold text-center mb-8">4. Follow the Money: A Trail Gone Cold</h2>
+
+            <h3 class="text-2xl font-semibold mb-3">Hansard Confirmation of UK Funding</h3>
+            <p class="mb-4">Official records from the UK Parliament’s Hansard—the authoritative transcript of parliamentary proceedings—unequivocally confirm that the Centre for Just Peace and Democracy (CJPD) received funding from the UK government. In particular, during the 2007–08 financial year, CJPD was listed as a recipient through the Conflict Prevention Pool (CPP)<span class="cite-ref">[cite: Hansard – UK Parliament]</span>.</p>
+            <p class="mb-4">This was publicly acknowledged by Minister Lord Malloch-Brown, who positioned CJPD as part of the UK’s broader peacebuilding and conflict prevention strategy<span class="cite-ref">[cite: Hansard – UK Parliament]</span>. The CPP itself, created in 2001, was a pooled mechanism designed to integrate the efforts of the Ministry of Defence (MOD), the Department for International Development (DFID), and the Foreign and Commonwealth Office (FCO)—a “joined-up government” model for tackling global conflicts.</p>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center mb-8">
+                <div>
+                    <h4 class="font-bold text-xl mb-4 text-center">The Proof of Funding: UK Parliament</h4>
+                    <div class="space-y-4">
+                        <div class="border-l-4 border-[#6B9DB3] pl-4 py-2 relative">
+                             <p class="text-5xl text-[#A5CADF] font-black absolute -mt-8 -ml-8 opacity-50">❞</p>
+                            <p class="italic text-accent mb-1">"In 2007–08 the UK will fund the Centre for Just Peace and Democracy (CJPD), a Swiss-based NGO…”</p>
+                            <p class="font-semibold text-right">– Lord Malloch-Brown, FCO Minister, Hansard, June 2007<span class="cite-ref">[cite: Hansard – UK Parliament]</span></p>
+                        </div>
+                        <div class="border-l-4 border-[#6B9DB3] pl-4 py-2 relative">
+                             <p class="text-5xl text-[#A5CADF] font-black absolute -mt-8 -ml-8 opacity-50">❞</p>
+                            <p class="italic text-accent mb-1">"The FCO’s Conflict Prevention Pool has supported... the Centre for Just Peace and Democracy..."</p>
+                            <p class="font-semibold text-right">– Meg Munn, FCO Under-Secretary, Hansard, July 2007<span class="cite-ref">[cite: Hansard – UK Parliament]</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                     <h4 class="font-bold text-xl mb-4 text-center">The Financial Record: A Black Hole</h4>
+                     <p class="text-center text-accent mb-4">Despite receiving public funds, CJPD published zero financial statements or annual reports.</p>
+                    <div class="chart-container mx-auto h-64 md:h-72">
+                        <canvas id="accountabilityDonutChart"></canvas>
+                    </div>
+                </div>
+            </div>
+
+            <h3 class="text-2xl font-semibold mb-3">Lack of Swiss Registration and Financial Reporting</h3>
+            <p class="mb-4">Despite receiving confirmed UK public funding, CJPD exhibits a significant lack of transparency in both its legal and financial status. There is no formal record of the organization in official Swiss legal registries, such as Zefix (the central commercial register) or SHAB (the official Swiss Gazette)<span class="cite-ref">[cite: Zefix (Swiss Commercial Register Portal); Handelsregister, Zefix® und Regix – Bundesamt für Justiz (Switzerland)]</span>. These public databases typically provide essential information about registered entities—such as their official address, legal structure, stated objectives, and management details<span class="cite-ref">[cite: Handelsregister (Schweiz) – Wikipedia; How to Find Company Information in Switzerland – Legalmondo]</span>.</p>
+            <p class="mb-4">While Swiss law does not strictly require all non-profit associations to register—particularly those not engaged in commercial activities or with limited annual revenue<span class="cite-ref">[cite: Advantages of Registering a Non-Profit Organization in Switzerland – BCUE]</span>—the lack of registration for an internationally funded entity creates a clear transparency deficit. This omission prevents external verification of CJPD’s foundational structure and denies it the institutional credibility often associated with registration under Swiss law, especially for an organization receiving public funds from a foreign government.</p>
+            <p class="mb-4">Even more concerning is the total absence of published financial statements or annual reports. There is no available documentation explaining how CJPD managed, allocated, or reported on its public funding. This directly contravenes widely accepted norms of non-profit financial transparency, which call for:</p>
+            <ul class="list-disc list-inside mb-4">
+                <li>Public access to detailed financial information<span class="cite-ref">[cite: Brady Martz – Financial Transparency for Non-Profits: Best Practices for Building Donor Trust]</span>.</li>
+                <li>Disclosure of revenue sources and expenditures<span class="cite-ref">[cite: 10 Strategies for Transparent Financial Reporting – fundsforNGOs]</span>.</li>
+                <li>External audits or at minimum internal financial accountability.</li>
+                <li>Ethical standards aligned with funder expectations.</li>
+            </ul>
+            <p class="mb-8">Emerging global frameworks such as the International Non-Profit Accounting Standards (INPAS) are pushing towards clearer and more unified standards in this space—CJPD’s silence stands in stark contrast<span class="cite-ref">[cite: INPAS – IFR4NPO (International Non-Profit Accounting Standards); MHA – The First International Accounting Standard for Non-Profit Organisations]</span>.</p>
+
+            <h3 class="text-2xl font-semibold mb-3">Accountability Gaps in Disbursement</h3>
+            <p class="mb-4">The opaque nature of CJPD’s financial operations and the absence of any public accountability mechanisms represent a serious governance failure. Without basic records or audits, it becomes nearly impossible to verify whether public funds were properly used, or whether any tangible results were achieved through CJPD’s programs. This weakens the case for funding diaspora-based Track II diplomacy and leaves taxpayer-backed peacebuilding efforts vulnerable to misuse or politicization.</p>
+            <p class="mb-8">While Track II diplomacy naturally involves confidentiality and informality, it must still uphold basic standards of accountability—especially when underwritten by public funds. In CJPD’s case, the failure to demonstrate even the most elementary level of financial integrity undermines both its credibility and legitimacy as a diplomatic actor. In the long run, such practices erode trust in publicly funded Track II efforts, risking the reputation of genuinely impactful initiatives and dissuading future support for innovative peacebuilding models.</p>
+        </section>
+
+        <section class="mb-12 md:mb-16">
+            <h2 class="text-3xl font-bold mb-4">5. Track II Diplomacy: Global Best Practices</h2>
+            <p class="mb-4">Track II diplomacy, characterized by unofficial and informal interactions, plays a crucial role in complementing formal peace processes. It fosters dialogue, builds trust, and allows sensitive issues to be explored without the rigid constraints of official negotiations<span class="cite-ref">[cite: The Power of Track II Diplomacy – Number Analytics Blog]</span>. By studying its successful application in various conflict contexts, valuable insights into its potential and its best practices can be gained.</p>
+
+            <h3 class="text-2xl font-semibold mb-3">Case Studies: Northern Ireland, Colombia, South Africa</h3>
+            <h4 class="text-xl font-semibold mb-2">Northern Ireland (1980s–1990s)</h4>
+            <p class="mb-4">Track II efforts were essential in preparing the ground for formal peace negotiations. The United States supported the process through development aid via the International Fund for Ireland (IFI), focusing on economic regeneration and reconciliation. In parallel, the EU-funded PEACE II Programme (2000–2006) allocated nearly €1 billion toward cross-community projects that addressed socio-economic inequality and promoted reconciliation. Key features included:</p>
+            <ul class="list-disc list-inside mb-4">
+                <li>Targeted, transparent approach to project selection, emphasizing peacebuilding goals.</li>
+                <li>Oversight mechanisms such as the Police Ombudsman and Human Rights Commission ensuring public trust and accountability.</li>
+                <li>Community engagement and economic development integrated with conflict resolution.</li>
+            </ul>
+
+            <h4 class="text-xl font-semibold mb-2">Colombia (2012–2016)</h4>
+            <p class="mb-4">The 2016 peace accord with FARC rebels is recognized for its inclusive and participatory model:</p>
+            <ul class="list-disc list-inside mb-4">
+                <li>National dialogues helped bridge deep societal divides and supported inter-track communication.</li>
+                <li>The Kroc Institute for International Peace Studies at the University of Notre Dame has monitored implementation in real-time since 2016.</li>
+                <li>Areas like disarmament, political participation, and land reform showed measurable progress, though challenges persist in security, reintegration, and fulfilling gender/ethnic provisions.</li>
+            </ul>
+            <p class="mb-4">The Colombian model highlights the value of academic partnerships, robust monitoring, and broad-based social inclusion.</p>
+
+            <h4 class="text-xl font-semibold mb-2">South Africa (1985–1990)</h4>
+            <p class="mb-4">Between 1985–1990, informal talks between white South African elites and the African National Congress (ANC) played a vital Track II role:</p>
+            <ul class="list-disc list-inside mb-4">
+                <li>These engagements legitimized the concept of negotiations and built support within resistant constituencies.</li>
+                <li>Participants included business leaders, church figures, and former state officials meeting ANC leaders abroad.</li>
+                <li>Track II efforts helped clarify conflict narratives, reduce mutual fears, and prepare actors for Track I discussions.</li>
+            </ul>
+            <p class="mb-8">The African Union now stresses inclusive peacebuilding, especially the meaningful participation of women and youth. The South African experience demonstrates how shared identity and dialogue capacity are built over time through informal, sustained engagement.</p>
+
+            <h3 class="text-2xl font-semibold mb-3">Criteria for Effective, Legitimate Track II</h3>
+            <p class="mb-4">To be credible and impactful—especially when public funds are involved—Track II initiatives must meet key international standards:</p>
+            <div class="bg-white rounded-lg shadow-md overflow-hidden mb-8">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Criteria</th>
+                            <th>Best Practice Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>**Credibility and Legitimacy**</td><td>Built through independence, impartiality, and association with reputable institutions.</td></tr>
+                        <tr><td>**Clear Goals and Objectives**</td><td>Must define scope, intended outcomes, and operational boundaries.</td></tr>
+                        <tr><td>**Transparent Communication**</td><td>Clear decision-making structures and coordination between stakeholders.</td></tr>
+                        <tr><td>**Outcome Reporting**</td><td>Tangible outputs and periodic evaluations to ensure relevance and success.</td></tr>
+                        <tr><td>**Confidentiality–Transparency Balance**</td><td>Sensitive dialogue is protected, but financial and ethical transparency must remain.</td></tr>
+                        <tr><td>**Inclusivity**</td><td>Women, youth, and marginalized communities must have a real voice, not just symbolic presence.</td></tr>
+                        <tr><td>**Local Ownership**</td><td>Sustainable peace requires local actors in leadership roles, with external actors supporting, not dominating.</td></tr>
+                        <tr><td>**Root Cause Engagement**</td><td>Efforts must address inequality, exclusion, and resource imbalances fueling conflict.</td></tr>
+                        <tr><td>**Trust Building**</td><td>Requires safe environments for story-sharing, cultural listening, and narrative exchange.</td></tr>
+                        <tr><td>**Link to Track I**</td><td>Must support or inform formal negotiations; not operate in isolation.</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section class="mb-12 md:mb-16">
+            <h2 class="text-3xl font-bold mb-4">6. Red Flags: Where CJPD Falls Short</h2>
+            <p class="mb-4">The Centre for Just Peace and Democracy (CJPD) exhibits serious deficiencies in legal status and financial transparency—red flags that are especially concerning given its confirmed receipt of UK public funds during a period of economic austerity.</p>
+
+            <h3 class="text-2xl font-semibold mb-3">Legal Status and Transparency</h3>
+            <p class="mb-4">CJPD has no traceable record of legal registration in Swiss public registries such as Zefix (the central commercial register) or SHAB (the official Swiss Gazette)<span class="cite-ref">[cite: Zefix (Swiss Commercial Register Portal); Handelsregister, Zefix® und Regix – Bundesamt für Justiz (Switzerland)]</span>. These registries typically disclose key details such as legal address, organizational structure, stated purpose, and names of directors or governing bodies<span class="cite-ref">[cite: Handelsregister (Schweiz) – Wikipedia]</span>.</p>
+            <p class="mb-8">While Swiss law does not strictly require all non-profit associations to be entered into the Commercial Register, particularly those not engaged in significant commercial activity, receiving international public funding for peacebuilding significantly raises the bar for expected transparency. In the absence of formal registration, CJPD operates in a legal grey zone, weakening its claim to legitimacy and hindering any public verification of its governance, structure, or purpose. This contrasts sharply with the "Credibility and Legitimacy" criterion for best practice.</p>
+
+            <h3 class="text-2xl font-semibold mb-3">Financial Transparency</h3>
+            <p class="mb-4">Compounding this, CJPD has never published financial statements or annual reports. There are no accessible records that detail how much funding was received, how those funds were allocated, or whether any activities were independently audited. This failure to report contradicts widely accepted non-profit best practices, which call for clear, detailed financial disclosures, audited statements reviewed by independent entities, and accessible reporting to stakeholders and the public<span class="cite-ref">[cite: Brady Martz – Financial Transparency for Non-Profits: Best Practices for Building Donor Trust; 10 Strategies for Transparent Financial Reporting – fundsforNGOs]</span>.</p>
+            <p class="mb-8">International standards such as the International Non-Profit Accounting Standards (INPAS) are being developed precisely to ensure that non-profit organizations manage donor funds with integrity, accountability, and auditability<span class="cite-ref">[cite: INPAS – IFR4NPO (International Non-Profit Accounting Standards)]</span>. CJPD’s refusal or failure to publish such reports suggests a major deviation from global norms and leaves its financial integrity unverified, directly violating the "Financial Transparency" and "Outcome Reporting" best practices.</p>
+
+            <h3 class="text-2xl font-semibold mb-3">Inclusivity and Representation</h3>
+            <p class="mb-4">CJPD has often been described as an “elite diaspora intellectual forum,” with limited grassroots participation or engagement. This operational model falls far short of the global standards for peacebuilding work, which emphasize inclusive, bottom-up processes that reflect the lived realities of those most affected by conflict.</p>
+            <p class="mb-4">Effective Track II diplomacy prioritizes:</p>
+            <ul class="list-disc list-inside mb-4">
+                <li>Diverse representation in leadership and consultation processes.</li>
+                <li>Safe and inclusive spaces for dialogue among all conflict stakeholders.</li>
+                <li>Local ownership, where communities directly affected by violence help shape the terms of peace.</li>
+            </ul>
+            <p class="mb-8">In contrast, CJPD appeared to be centralized among professional diaspora actors, often detached from war-affected communities, internally displaced populations, or women's networks within Sri Lanka. Its events and publications rarely demonstrate outreach to grassroots actors or accountability to broader Tamil society. This exclusionary structure undermines CJPD’s credibility as a platform for genuine peace dialogue and raises questions about whether it acted as a representative body or simply as a diaspora think tank operating at a distance from the conflict’s frontlines, violating the "Inclusivity" and "Local Ownership" criteria.</p>
+
+            <h3 class="text-2xl font-semibold mb-3">Influence on Formal Peace Processes</h3>
+            <p class="mb-4">The ultimate test of a Track II actor lies in its ability to feed ideas, relationships, or frameworks into official (Track I) peace processes. While Track II diplomacy values informal dialogue and discretion, its credibility and value rest on measurable contributions to de-escalation, negotiations, or post-conflict reconciliation.</p>
+            <p class="mb-4">CJPD organized a handful of seminars and conferences, some of which involved international partners like Berghof Foundation and Swisspeace. However, it has:</p>
+            <ul class="list-disc list-inside mb-4">
+                <li>No published archive of outputs or policy recommendations.</li>
+                <li>No public record of engagement with formal Track I actors after 2007.</li>
+                <li>No known influence on key political outcomes or institutional reforms.</li>
+            </ul>
+            <p class="mb-8">This is in stark contrast to successful examples such as:</p>
+            <ul class="list-disc list-inside mb-4">
+                <li>The Oslo backchannel, which evolved into the Oslo Accords in the Israel–Palestine conflict.</li>
+                <li>The South African informal dialogues (1985–1990), which helped shape constitutional negotiations.</li>
+                <li>The Colombian peace process, continuously monitored by the Kroc Institute to ensure public transparency and implementation.</li>
+            </ul>
+            <p class="mb-8">CJPD’s lack of traceable policy input, trackable influence, or outcome reporting makes it impossible to evaluate its actual contributions to Sri Lanka’s peace efforts. Instead of functioning as a bridge between communities and formal diplomacy, CJPD appears to have operated in isolation, with minimal public oversight or measurable success, failing the "Link to Track I" and "Outcome Reporting" criteria.</p>
+
+            <section class="mb-12 md:mb-16">
+                 <h3 class="text-3xl font-bold text-center mb-8">Red Flags: A Complete Governance Breakdown Illustrated</h3>
+                 <p class="text-center text-accent max-w-2xl mx-auto mb-8">CJPD failed to meet even the most basic standards expected of an organization handling public funds for sensitive peace work. A comparison with global best practices reveals critical deficiencies.</p>
+                 <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <div class="grid grid-cols-3 font-bold text-center bg-[#003F5C] text-white p-4">
+                        <span>Area of Concern</span>
+                        <span>Global Best Practice</span>
+                        <span>CJPD Performance</span>
+                    </div>
+                    <div class="divide-y divide-[#A5CADF]">
+                        <div class="grid grid-cols-3 text-center p-4 items-center">
+                            <span class="font-semibold">Legal Registration</span>
+                            <span class="text-green-600 text-2xl font-bold">✔</span>
+                            <span class="text-red-600 text-2xl font-bold">✖</span>
+                        </div>
+                         <div class="grid grid-cols-3 text-center p-4 bg-white/70 items-center">
+                            <span class="font-semibold">Financial Transparency</span>
+                            <span class="text-green-600 text-2xl font-bold">✔</span>
+                            <span class="text-red-600 text-2xl font-bold">✖</span>
+                        </div>
+                         <div class="grid grid-cols-3 text-center p-4 items-center">
+                            <span class="font-semibold">Inclusivity & Representation</span>
+                            <span class="text-green-600 text-2xl font-bold">✔</span>
+                            <span class="text-red-600 text-2xl font-bold">✖</span>
+                        </div>
+                         <div class="grid grid-cols-3 text-center p-4 bg-white/70 items-center">
+                            <span class="font-semibold">Verifiable Impact on Peace Process</span>
+                            <span class="text-green-600 text-2xl font-bold">✔</span>
+                            <span class="text-red-600 text-2xl font-bold">✖</span>
+                        </div>
+                    </div>
+                 </div>
+            </section>
+        </section>
+
+        <section class="mb-12 md:mb-16">
+            <h2 class="text-3xl font-bold mb-4">7. Public Accountability in Times of Recession</h2>
+            <p class="mb-4">The financial crisis amplified demands for greater transparency in government spending, particularly for foreign aid. As public services were cut, scrutiny over international development budgets intensified in both Parliament and the press. The Freedom of Information Act (2000), in force since 2005, empowered the public to request access to government-held data—including spending records. Unsurprisingly, FOI requests surged during this period, reflecting increased public demand for accountability and evidence-based justification of aid programs.</p>
+            <p class="mb-4">At the same time, debates intensified in Parliament over:</p>
+            <ul class="list-disc list-inside mb-4">
+                <li>Whether the 0.7% of GNI aid target (later enshrined in law in 2015) was enforceable.</li>
+                <li>Concerns that ministerial discretion could override Parliament’s role in aid oversight.</li>
+                <li>Fears of executive overreach in deciding aid flows without robust mechanisms for public or legislative checks.</li>
+            </ul>
+            <p class="mb-8">The case of CJPD, which received CPP funds without being publicly registered or financially accountable, exemplifies the risks of opacity. In a period of economic hardship, recipient organizations were expected to meet higher standards of fiscal responsibility to justify their share of public money. CJPD’s lack of public records—legal, financial, or programmatic—stands out as an emblem of failed aid transparency. This also brought into sharp focus the moral dilemmas of international aid during domestic hardship, where the burden of accountability fell squarely on aid recipients.</p>
+        </section>
+
+        <section class="mb-12 md:mb-16">
+            <h2 class="text-3xl font-bold mb-4">8. Ongoing Investigations and FOI Efforts</h2>
+            <p class="mb-4">Efforts to investigate the funding and accountability of the Centre for Just Peace and Democracy (CJPD) have included formal correspondence with both the Foreign, Commonwealth & Development Office (FCDO) and the National Audit Office (NAO).</p>
+            <p class="mb-4">The NAO, as the UK’s independent public spending watchdog, audits government departments and public bodies to ensure the effective, economic, and lawful use of resources. While the NAO acknowledged the relevance of the issue, it reported that it no longer holds financial records from the 2007–09 period due to its six-year retention policy. However, it did confirm that CJPD received UK funding through the Conflict Prevention Pool (CPP) and recommended that further information be sought directly from the FCDO. A formal Freedom of Information (FOI) request has since been submitted to the FCDO. Under the Freedom of Information Act 2000, UK citizens have the legal right to request recorded information from public authorities. This mechanism exists to promote government transparency, especially regarding how public funds are allocated and monitored.</p>
+            <p class="mb-4">Since CJPD was based in Switzerland, attempts have also been made to verify its legal and financial status through Swiss public records. Searches were conducted in:</p>
+            <ul class="list-disc list-inside mb-4">
+                <li>Zefix (Zentraler Firmenindex) – the official Swiss registry of legal entities.</li>
+                <li>SHAB (Schweizerisches Handelsamtsblatt) – the official gazette for commercial registration notices.</li>
+            </ul>
+            <p class="mb-4">To date, no results have been found under “Centre for Just Peace and Democracy,” and there is no evidence of tax filings or legal entity registration<span class="cite-ref">[cite: Zefix (Swiss Commercial Register Portal); Handelsregister, Zefix® und Regix – Bundesamt für Justiz (Switzerland)]</span>. This raises serious questions about CJPD’s compliance with Swiss regulatory standards, especially in light of its receipt of international public funds. Further inquiries with Swiss regulatory authorities are ongoing, seeking clarification on whether CJPD operated under a different name, bypassed registration requirements, or failed to meet legal obligations under Swiss association law<span class="cite-ref">[cite: Establishing an Association in Switzerland – SwissCompany]</span>.</p>
+            <p class="mb-4">To expand the scope and potential impact of the investigation, findings were shared with Corporate Watch, a UK-based investigative research group, and subsequently referred to Declassified UK. Declassified’s editorial team has been briefed and invited to pursue further inquiries. Investigative journalists and watchdog NGOs play a critical role in ensuring transparency in global aid and peacebuilding initiatives by uncovering hidden networks, misused funds, or governance failures. Further outreach is in progress to engage transparency-oriented civil society groups, including aid watchdogs, European NGOs monitoring diaspora lobbying, and academic researchers. These efforts aim to create a networked accountability ecosystem, where journalistic, institutional, and citizen-led scrutiny can work in tandem to hold fund recipients accountable.</p>
+        </section>
+
+        <section class="mb-12 md:mb-16">
+            <h2 class="text-3xl font-bold mb-4">9. Conclusions and Key Questions Raised</h2>
+            <p class="mb-4">Based on the available evidence, the operational profile of the Centre for Just Peace and Democracy (CJPD) raises serious doubts about whether it functioned as a genuine Track II peacebuilding actor or operated as a shell organization.</p>
+            <p class="mb-4">While CJPD publicly positioned itself as a platform for dialogue and research within the Tamil diaspora, its failure to maintain formal legal registration in Switzerland, combined with the complete absence of financial statements or impact reports, critically undermines its credibility. Unlike well-established Track II diplomacy initiatives that demonstrate transparency, legitimacy, and outcomes, CJPD exhibited:</p>
+            <ul class="list-disc list-inside mb-4">
+                <li>No accessible records of financial accountability.</li>
+                <li>Limited grassroots participation.</li>
+                <li>No verifiable outcomes or evaluation mechanisms.</li>
+            </ul>
+            <p class="mb-8">This degree of opacity makes it impossible to assess whether public funds were used responsibly. The burden of proof lies with organizations receiving state funding—CJPD did not meet even the most basic expectations for transparency, accountability, or public trust.</p>
+
+            <h3 class="text-2xl font-semibold mb-3">Process Failure: The Ideal vs. The Reality</h3>
+            <p class="text-center text-accent max-w-3xl mx-auto mb-8">The CJPD case exposes multiple failures in public oversight, particularly in the administration of the UK’s Conflict Prevention Pool (CPP). Below is a comparison of best practice against CJPD's opaque operations.</p>
+             <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+                <div class="bg-white rounded-lg shadow-md p-6 border-t-4 border-green-500">
+                    <h4 class="text-xl font-bold mb-4 text-center">Best Practice: Accountable Peacebuilding</h4>
+                    <div class="space-y-2 text-center text-accent">
+                        <div class="p-2 bg-[#E0F2F8] rounded">Due Diligence & Vetting</div>
+                        <div class="text-2xl text-[#6B9DB3]">↓</div>
+                        <div class="p-2 bg-[#E0F2F8] rounded">Conditional Funding</div>
+                        <div class="text-2xl text-[#6B9DB3]">↓</div>
+                        <div class="p-2 bg-[#E0F2F8] rounded">Monitored Activities</div>
+                        <div class="text-2xl text-[#6B9DB3]">↓</div>
+                        <div class="p-2 bg-[#E0F2F8] rounded">Transparent Reporting</div>
+                        <div class="text-2xl text-[#6B9DB3]">↓</div>
+                        <div class="p-2 bg-green-100 rounded font-bold">Verifiable Impact</div>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-md p-6 border-t-4 border-red-500">
+                    <h4 class="text-xl font-bold mb-4 text-center">The CJPD Case: Opaque Operations</h4>
+                    <div class="space-y-2 text-center text-accent">
+                        <div class="p-2 bg-[#E0F2F8] rounded">Funding Approved</div>
+                        <div class="text-2xl text-[#6B9DB3]">↓</div>
+                         <div class="p-2 bg-gray-200 rounded font-bold text-gray-500 text-2xl">?</div>
+                         <div class="text-2xl text-[#6B9DB3]">↓</div>
+                         <div class="p-2 bg-gray-200 rounded font-bold text-gray-500">No Public Monitoring</div>
+                         <div class="text-2xl text-[#6B9DB3]">↓</div>
+                         <div class="p-2 bg-gray-200 rounded font-bold text-gray-500">No Public Reporting</div>
+                         <div class="text-2xl text-[#6B9DB3]">↓</div>
+                        <div class="p-2 bg-red-100 rounded font-bold">No Verifiable Impact</div>
+                    </div>
+                </div>
+             </div>
+
+            <p class="mb-4">This case study presents urgent lessons for policymakers, funders, and practitioners involved in Track II diplomacy and public peacebuilding initiatives. CJPD’s lack of transparency undermines broader trust in public peacebuilding funding. If funds are perceived as misused, future political and public support—especially during economic austerity—could decline sharply. When Track II actors fail to meet basic ethical standards, the entire domain of unofficial diplomacy risks being delegitimized, potentially discouraging governments from engaging with non-state actors.</p>
+        </section>
+
+        <section class="mb-12 md:mb-16">
+            <h2 class="text-3xl font-bold mb-4">10. Recommendations</h2>
+            <p class="mb-4">To prevent similar accountability gaps and ensure the ethical and effective use of public funds in peacebuilding, governments, funding institutions, diaspora communities, and investigative bodies should adopt the following measures:</p>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+                <div class="bg-white/80 rounded-lg shadow-md p-6">
+                    <h3 class="font-bold text-xl mb-3">For Governments & Funders</h3>
+                    <ul class="bullet-list space-y-2 text-accent">
+                        <li>Mandate legal registration and financial reporting as non-negotiable funding conditions—regardless of local legal thresholds.</li>
+                        <li>Strengthen due diligence and continuous monitoring for all grant recipients.</li>
+                         <li>Demand measurable outcomes and link expenditures to tangible results.</li>
+                         <li>Establish clear policies distinguishing between sensitive operational details that require confidentiality and administrative and financial data that must be publicly disclosed or made available to auditors.</li>
+                         <li>Encourage coordination among donor governments and institutions to harmonize compliance standards for NPOs.</li>
+                         <li>Publish key information on peacebuilding grants, recipient profiles, and disbursement records. Strengthen response standards to Freedom of Information (FOI) requests.</li>
+                    </ul>
+                </div>
+                 <div class="bg-white/80 rounded-lg shadow-md p-6">
+                    <h3 class="font-bold text-xl mb-3">For Diaspora Communities</h3>
+                     <ul class="bullet-list space-y-2 text-accent">
+                        <li>Formalize legal status in jurisdictions of operation to enhance legal clarity, institutional credibility, and donor confidence.</li>
+                        <li>Publish audited financial statements and annual reports that clearly identify revenue sources, expenditure breakdowns, and governance processes.</li>
+                         <li>Broaden participation beyond elite circles by actively involving women, youth, and marginalized diaspora groups.</li>
+                         <li>Build systems to track and publicly report outcomes of peacebuilding efforts.</li>
+                         <li>Adopt internal controls, clear conflict-of-interest policies, and recruit governing boards with diverse perspectives, financial literacy, and commitment to ethical leadership and compliance.</li>
+                    </ul>
+                </div>
+                 <div class="bg-white/80 rounded-lg shadow-md p-6">
+                    <h3 class="font-bold text-xl mb-3">For Civil Society & Journalists</h3>
+                     <ul class="bullet-list space-y-2 text-accent">
+                        <li>Continue investigating how public peacebuilding funds are allocated and spent, especially in opaque or politically sensitive environments.</li>
+                        <li>Strengthen transnational networks with other journalists, NGOs, and watchdog organizations to share findings and amplify pressure.</li>
+                         <li>Promote stronger laws and funding regulations that enforce transparency obligations for recipients, oversight mandates for public bodies, and penalties for misuse or evasion.</li>
+                         <li>Inform the public about the stakes of aid mismanagement and the importance of transparency in peacebuilding to foster civic engagement and build political will for reform.</li>
+                    </ul>
+                </div>
+            </div>
+            <p class="mb-4">The case of the Centre for Just Peace and Democracy (CJPD) raises troubling and unresolved questions about the oversight of publicly funded peacebuilding efforts—particularly within the sensitive sphere of Track II diplomacy:</p>
+            <ul class="list-disc list-inside mb-4">
+                <li>How was a seemingly unregistered and unaccountable organization able to receive UK public funding?</li>
+                <li>What due diligence was conducted before disbursing funds to CJPD?</li>
+                <li>Why were there no publicly available financial reports, independent evaluations, or documentation of measurable outcomes?</li>
+                <li>What safeguards are currently in place to prevent similar lapses in transparency and accountability?</li>
+                <li>How can Track II diplomacy maintain necessary operational confidentiality while still meeting baseline financial and legal obligations?</li>
+            </ul>
+            <p class="mb-8">As investigations continue, these questions highlight a deeper systemic issue: the urgent need for enforceable accountability standards when public money is spent on politically sensitive peacebuilding initiatives abroad. Without these safeguards, public trust in both the foreign aid system and Track II diplomacy risks being undermined, especially in contexts of economic austerity and geopolitical sensitivity.</p>
+        </section>
+
+        <footer class="text-center mt-12 md:mt-16 text-[#6B9DB3] text-sm">
+            <h2 class="text-xl font-bold mb-3">References</h2>
+            <ul class="list-none space-y-1 mx-auto max-w-2xl text-left">
+                <li>*10 Strategies for Transparent Financial Reporting – fundsforNGOs*. Accessed June 21, 2025. <a href="https://www2.fundsforngos.org/articles/10-strategies-for-transparent-financial-reporting/" class="text-[#366E8A] hover:underline">https://www2.fundsforngos.org/articles/10-strategies-for-transparent-financial-reporting/</a></li>
+                <li>*Advantages of Registering a Non-Profit Organization in Switzerland – BCUE*. Accessed June 21, 2025. <a href="https://bcue.ch/en/advantages-of-registering-a-non-profit-organization-in-switzerland/" class="text-[#366E8A] hover:underline">https://bcue.ch/en/advantages-of-registering-a-non-profit-organization-in-switzerland/</a></li>
+                <li>*Brady Martz – Financial Transparency for Non-Profits: Best Practices for Building Donor Trust*. Accessed June 21, 2025. <a href="https://www.bradymartz.com/news/financial-transparency-for-non-profits-best-practices-for-building-donor-trust/" class="text-[#366E8A] hover:underline">https://www.bradymartz.com/news/financial-transparency-for-non-profits-best-practices-for-building-donor-trust/</a></li>
+                <li>*Establishing an Association in Switzerland – SwissCompany*. Accessed June 21, 2025. <a href="https://www.swisscompany.com/en/establishing-an-association-in-switzerland-including-as-a-non-resident-foreigner-2659/" class="text-[#366E8A] hover:underline">https://www.swisscompany.com/en/establishing-an-association-in-switzerland-including-as-a-non-resident-foreigner-2659/</a></li>
+                <li>*Handelsregister (Schweiz) – Wikipedia*. Accessed June 21, 2025. <a href="https://de.wikipedia.org/wiki/Handelsregister_(Schweiz)" class="text-[#366E8A] hover:underline">https://de.wikipedia.org/wiki/Handelsregister_(Schweiz)</a></li>
+                <li>*Hansard – UK Parliament*. Accessed June 21, 2025. <a href="https://hansard.parliament.uk" class="text-[#366E8A] hover:underline">https://hansard.parliament.uk</a></li>
+                <li>*How to Find Company Information in Switzerland – Legalmondo*. Accessed June 21, 2025. <a href="https://www.legalmondo.com/product/how-find-company-information-switzerland/" class="text-[#366E8A] hover:underline">https://www.legalmondo.com/product/how-find-company-information-switzerland/</a></li>
+                <li>*ICAI, Conflict Pool Inception Report*. Accessed June 21, 2025. <a href="https://icai.independent.gov.uk/wp-content/uploads/ICAI-Conflict-Pool-Inception-Report-FINAL.pdf" class="text-[#366E8A] hover:underline">https://icai.independent.gov.uk/wp-content/uploads/ICAI-Conflict-Pool-Inception-Report-FINAL.pdf</a></li>
+                <li>*INPAS – IFR4NPO (International Non-Profit Accounting Standards)*. Accessed June 21, 2025. <a href="https://www.ifr4npo.org/inpas/" class="text-[#366E8A] hover:underline">https://www.ifr4npo.org/inpas/</a></li>
+                <li>*MHA – The First International Accounting Standard for Non-Profit Organisations*. Accessed June 21, 2025. <a href="https://www.mha.co.uk/insights/the-first-international-accounting-standard-for-non-profit-organisations" class="text-[#366E8A] hover:underline">https://www.mha.co.uk/insights/the-first-international-accounting-standard-for-non-profit-organisations</a></li>
+                <li>*The Global Conflict Prevention Pool: A Joint UK Government Approach to Reducing Conflict*. Accessed June 21, 2025. Link (MSU)</li>
+                <li>*The Power of Track II Diplomacy – Number Analytics Blog*. Accessed June 21, 2025. <a href="https://www.numberanalytics.com/blog/track-ii-diplomacy-power" class="text-[#366E8A] hover:underline">https://www.numberanalytics.com/blog/track-ii-diplomacy-power</a></li>
+                <li>*United Kingdom Government Austerity Programme – Wikipedia*. Accessed June 21, 2025. <a href="https://en.wikipedia.org/wiki/United_Kingdom_government_austerity_programme" class="text-[#366E8A] hover:underline">https://en.wikipedia.org/wiki/United_Kingdom_government_austerity_programme</a></li>
+                <li>*Zefix (Swiss Commercial Register Portal)*. Accessed June 21, 2025. <a href="https://www.zefix.ch/" class="text-[#366E8A] hover:underline">https://www.zefix.ch/</a></li>
+            </ul>
+            <p class="mt-4">Infographic and report data synthesized from provided sources.</p>
+        </footer>
+
+    </div>
+
+    <script>
+        const brilliantBluesPalette = {
+            dark: '#003F5C',
+            midDark: '#366E8A',
+            mid: '#6B9DB3',
+            midLight: '#A5CADF',
+            light: '#E0F2F8'
+        };
+
+        const wrapLabel = (label) => {
+            const maxLength = 16;
+            if (typeof label === 'string' && label.length > maxLength) {
+                const words = label.split(' ');
+                const lines = [];
+                let currentLine = '';
+                words.forEach(word => {
+                    if ((currentLine + ' ' + word).length > maxLength) {
+                        lines.push(currentLine);
+                        currentLine = word;
+                    } else {
+                        currentLine += (currentLine ? ' ' : '') + word;
+                    }
+                });
+                lines.push(currentLine);
+                return lines;
+            }
+            return label;
+        };
+
+        const tooltipTitleCallback = (tooltipItems) => {
+            const item = tooltipItems[0];
+            let label = item.chart.data.labels[item.dataIndex];
+            if (Array.isArray(label)) {
+              return label.join(' ');
+            }
+            return label;
+        };
+
+        const defaultChartOptions = {
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: {
+                legend: {
+                    labels: {
+                        color: brilliantBluesPalette.dark,
+                        font: {
+                            family: "'Inter', sans-serif"
+                        }
+                    }
+                },
+                tooltip: {
+                    callbacks: {
+                        title: tooltipTitleCallback
+                    }
+                }
+            },
+            scales: {
+                y: {
+                    ticks: { color: brilliantBluesPalette.midDark },
+                    grid: { color: brilliantBluesPalette.midLight }
+                },
+                x: {
+                    ticks: { color: brilliantBluesPalette.midDark },
+                    grid: { display: false }
+                }
+            }
+        };
+
+        const cppBudgetData = {
+            labels: ['2007-08', '2008-09 (Austerity Begins)'].map(wrapLabel),
+            datasets: [{
+                label: 'CPP Budget (£ Million)',
+                data: [138, 112],
+                backgroundColor: [brilliantBluesPalette.mid, brilliantBluesPalette.midDark],
+                borderColor: brilliantBluesPalette.dark,
+                borderWidth: 1
+            }]
+        };
+
+        new Chart(document.getElementById('cppBudgetChart'), {
+            type: 'bar',
+            data: cppBudgetData,
+            options: { ...defaultChartOptions }
+        });
+
+        const accountabilityData = {
+            labels: ['Undisclosed / Unreported', 'Publicly Audited / Reported'],
+            datasets: [{
+                label: 'Financial Accountability',
+                data: [100, 0],
+                backgroundColor: [
+                    '#dc2626',
+                    '#16a34a'
+                ],
+                borderColor: brilliantBluesPalette.light,
+                borderWidth: 2,
+                hoverOffset: 4
+            }]
+        };
+
+        new Chart(document.getElementById('accountabilityDonutChart'), {
+            type: 'doughnut',
+            data: accountabilityData,
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: {
+                        position: 'top',
+                        labels: {
+                           color: brilliantBluesPalette.dark,
+                           font: {
+                               family: "'Inter', sans-serif"
+                           }
+                        }
+                    },
+                    tooltip: {
+                        callbacks: {
+                            title: tooltipTitleCallback
+                        }
+                    }
+                }
+            }
+        });
+    </script>
+
+</body>
+</html>
+
